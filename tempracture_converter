@@ -1,0 +1,10 @@
+def converter(C):    # FUnction to convert Celsius to Fahrenheit
+    if(C==0):
+        return 0
+    F_temp=int((C*9/5)+32)
+    
+    return F_temp
+
+C_temp=int(input("Enter temprature in Celsius : "))
+result=converter(C_temp)
+print(f"{C_temp}° Celsius =  {result}° Fahrenheit")
