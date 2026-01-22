@@ -1,0 +1,22 @@
+# Grandparent class
+class Grandparent:
+    def family_name(self):
+        print("Family name is Khan")
+
+# Parent class inherits from Grandparent
+class Parent(Grandparent):
+    def profession(self):
+        print("Parent is a doctor")
+
+# Child class inherits from Parent
+class Child(Parent):
+    def hobby(self):
+        print("Child loves football")
+
+# Create object of Child
+c1 = Child()
+
+# Access methods from all levels
+c1.family_name()  # From Grandparent
+c1.profession()   # From Parent
+c1.hobby()        # From Child itself
